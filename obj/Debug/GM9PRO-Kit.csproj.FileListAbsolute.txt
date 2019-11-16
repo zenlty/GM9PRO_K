@@ -1,7 +1,6 @@
 C:\Users\SE\Desktop\Projects\GM9PRO-Kit\bin\Debug\GM9PRO-Kit.exe.config
 C:\Users\SE\Desktop\Projects\GM9PRO-Kit\bin\Debug\GM9PRO-Kit.exe
 C:\Users\SE\Desktop\Projects\GM9PRO-Kit\bin\Debug\GM9PRO-Kit.pdb
-C:\Users\SE\Desktop\Projects\GM9PRO-Kit\bin\Debug\XanderUI.dll
 C:\Users\SE\Desktop\Projects\GM9PRO-Kit\obj\Debug\GM9PRO-Kit.csprojAssemblyReference.cache
 C:\Users\SE\Desktop\Projects\GM9PRO-Kit\obj\Debug\GM9PRO_Kit.Form1.resources
 C:\Users\SE\Desktop\Projects\GM9PRO-Kit\obj\Debug\GM9PRO_Kit.Properties.Resources.resources
