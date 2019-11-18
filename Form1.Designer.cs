@@ -32,29 +32,34 @@
             this.form = new XanderUI.XUIFormDesign();
             this.tab = new System.Windows.Forms.TabControl();
             this.tab1 = new System.Windows.Forms.TabPage();
+            this.btn_reboot = new iTalk.iTalk_Button_1();
+            this.combo_reboot = new iTalk.iTalk_ComboBox();
+            this.btn_fix = new iTalk.iTalk_Button_1();
+            this.combo_fix = new iTalk.iTalk_ComboBox();
+            this.progress_xml = new System.Windows.Forms.ProgressBar();
+            this.btn_xmlflash = new iTalk.iTalk_Button_1();
+            this.btn_xml = new iTalk.iTalk_Button_1();
+            this.rbtn_dual = new iTalk.iTalk_RadioButton();
+            this.rbnt_single = new iTalk.iTalk_RadioButton();
+            this.btn_flash = new iTalk.iTalk_Button_1();
+            this.combo_rom = new iTalk.iTalk_ComboBox();
+            this.btn_oem = new iTalk.iTalk_Button_1();
+            this.combo_oem = new iTalk.iTalk_ComboBox();
+            this.btn_read = new iTalk.iTalk_Button_1();
             this.tab2 = new System.Windows.Forms.TabPage();
             this.grp_detecter = new XanderUI.XUICustomGroupbox();
             this.detecterbanner = new XanderUI.XUISuperButton();
             this.log = new iTalk.iTalk_RichTextBox();
-            this.iTalk_Button_11 = new iTalk.iTalk_Button_1();
-            this.combo_oem = new iTalk.iTalk_ComboBox();
-            this.btn_oem = new iTalk.iTalk_Button_1();
-            this.iTalk_Button_12 = new iTalk.iTalk_Button_1();
-            this.iTalk_ComboBox1 = new iTalk.iTalk_ComboBox();
-            this.iTalk_RadioButton1 = new iTalk.iTalk_RadioButton();
-            this.iTalk_RadioButton2 = new iTalk.iTalk_RadioButton();
-            this.iTalk_Button_13 = new iTalk.iTalk_Button_1();
-            this.iTalk_Button_14 = new iTalk.iTalk_Button_1();
-            this.progress_xml = new System.Windows.Forms.ProgressBar();
-            this.iTalk_ComboBox2 = new iTalk.iTalk_ComboBox();
-            this.iTalk_Button_15 = new iTalk.iTalk_Button_1();
-            this.iTalk_Button_16 = new iTalk.iTalk_Button_1();
-            this.iTalk_ComboBox3 = new iTalk.iTalk_ComboBox();
+            this.iTalk_GroupBox1 = new iTalk.iTalk_GroupBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.form.WorkingArea.SuspendLayout();
             this.form.SuspendLayout();
             this.tab.SuspendLayout();
             this.tab1.SuspendLayout();
             this.grp_detecter.SuspendLayout();
+            this.iTalk_GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // form
@@ -75,9 +80,10 @@
             // form.WorkingArea
             // 
             this.form.WorkingArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.form.WorkingArea.Controls.Add(this.log);
+            this.form.WorkingArea.Controls.Add(this.iTalk_GroupBox1);
             this.form.WorkingArea.Controls.Add(this.tab);
             this.form.WorkingArea.Controls.Add(this.grp_detecter);
+            this.form.WorkingArea.Controls.Add(this.log);
             this.form.WorkingArea.Dock = System.Windows.Forms.DockStyle.Fill;
             this.form.WorkingArea.Location = new System.Drawing.Point(0, 39);
             this.form.WorkingArea.Name = "WorkingArea";
@@ -96,27 +102,243 @@
             // 
             // tab1
             // 
-            this.tab1.Controls.Add(this.iTalk_Button_16);
-            this.tab1.Controls.Add(this.iTalk_ComboBox3);
-            this.tab1.Controls.Add(this.iTalk_Button_15);
-            this.tab1.Controls.Add(this.iTalk_ComboBox2);
+            this.tab1.Controls.Add(this.btn_reboot);
+            this.tab1.Controls.Add(this.combo_reboot);
+            this.tab1.Controls.Add(this.btn_fix);
+            this.tab1.Controls.Add(this.combo_fix);
             this.tab1.Controls.Add(this.progress_xml);
-            this.tab1.Controls.Add(this.iTalk_Button_14);
-            this.tab1.Controls.Add(this.iTalk_Button_13);
-            this.tab1.Controls.Add(this.iTalk_RadioButton2);
-            this.tab1.Controls.Add(this.iTalk_RadioButton1);
-            this.tab1.Controls.Add(this.iTalk_Button_12);
-            this.tab1.Controls.Add(this.iTalk_ComboBox1);
+            this.tab1.Controls.Add(this.btn_xmlflash);
+            this.tab1.Controls.Add(this.btn_xml);
+            this.tab1.Controls.Add(this.rbtn_dual);
+            this.tab1.Controls.Add(this.rbnt_single);
+            this.tab1.Controls.Add(this.btn_flash);
+            this.tab1.Controls.Add(this.combo_rom);
             this.tab1.Controls.Add(this.btn_oem);
             this.tab1.Controls.Add(this.combo_oem);
-            this.tab1.Controls.Add(this.iTalk_Button_11);
+            this.tab1.Controls.Add(this.btn_read);
             this.tab1.Location = new System.Drawing.Point(4, 22);
             this.tab1.Name = "tab1";
             this.tab1.Padding = new System.Windows.Forms.Padding(3);
             this.tab1.Size = new System.Drawing.Size(323, 228);
             this.tab1.TabIndex = 0;
-            this.tab1.Text = "Tools";
+            this.tab1.Text = "Araçlar";
             this.tab1.UseVisualStyleBackColor = true;
+            // 
+            // btn_reboot
+            // 
+            this.btn_reboot.BackColor = System.Drawing.Color.Transparent;
+            this.btn_reboot.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btn_reboot.Image = null;
+            this.btn_reboot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_reboot.Location = new System.Drawing.Point(257, 194);
+            this.btn_reboot.Name = "btn_reboot";
+            this.btn_reboot.Size = new System.Drawing.Size(56, 26);
+            this.btn_reboot.TabIndex = 14;
+            this.btn_reboot.Text = "Yap";
+            this.btn_reboot.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // combo_reboot
+            // 
+            this.combo_reboot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.combo_reboot.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combo_reboot.DropDownHeight = 100;
+            this.combo_reboot.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_reboot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.combo_reboot.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.combo_reboot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(142)))), ((int)(((byte)(142)))));
+            this.combo_reboot.FormattingEnabled = true;
+            this.combo_reboot.HoverSelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.combo_reboot.IntegralHeight = false;
+            this.combo_reboot.ItemHeight = 20;
+            this.combo_reboot.Items.AddRange(new object[] {
+            "Normal Yeniden Başlatma",
+            "Kurtarıcı Yeniden Başlatma",
+            "ÖnYükleyici Yeniden Başlatma"});
+            this.combo_reboot.Location = new System.Drawing.Point(5, 194);
+            this.combo_reboot.Name = "combo_reboot";
+            this.combo_reboot.Size = new System.Drawing.Size(245, 26);
+            this.combo_reboot.StartIndex = 0;
+            this.combo_reboot.TabIndex = 13;
+            // 
+            // btn_fix
+            // 
+            this.btn_fix.BackColor = System.Drawing.Color.Transparent;
+            this.btn_fix.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btn_fix.Image = null;
+            this.btn_fix.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_fix.Location = new System.Drawing.Point(257, 162);
+            this.btn_fix.Name = "btn_fix";
+            this.btn_fix.Size = new System.Drawing.Size(56, 26);
+            this.btn_fix.TabIndex = 12;
+            this.btn_fix.Text = "Düzelt";
+            this.btn_fix.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // combo_fix
+            // 
+            this.combo_fix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.combo_fix.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combo_fix.DropDownHeight = 100;
+            this.combo_fix.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_fix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.combo_fix.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.combo_fix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(142)))), ((int)(((byte)(142)))));
+            this.combo_fix.FormattingEnabled = true;
+            this.combo_fix.HoverSelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.combo_fix.IntegralHeight = false;
+            this.combo_fix.ItemHeight = 20;
+            this.combo_fix.Items.AddRange(new object[] {
+            "Ahize Sesi",
+            "VoLTE (Bazı Romlar)",
+            "Arama Sesi",
+            "Her Zaman Açık Ekran",
+            "Dahili Depolama",
+            "Google Play Servisleri"});
+            this.combo_fix.Location = new System.Drawing.Point(6, 162);
+            this.combo_fix.Name = "combo_fix";
+            this.combo_fix.Size = new System.Drawing.Size(245, 26);
+            this.combo_fix.StartIndex = 0;
+            this.combo_fix.TabIndex = 11;
+            // 
+            // progress_xml
+            // 
+            this.progress_xml.Location = new System.Drawing.Point(108, 130);
+            this.progress_xml.Name = "progress_xml";
+            this.progress_xml.Size = new System.Drawing.Size(143, 26);
+            this.progress_xml.TabIndex = 10;
+            // 
+            // btn_xmlflash
+            // 
+            this.btn_xmlflash.BackColor = System.Drawing.Color.Transparent;
+            this.btn_xmlflash.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btn_xmlflash.Image = null;
+            this.btn_xmlflash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_xmlflash.Location = new System.Drawing.Point(257, 130);
+            this.btn_xmlflash.Name = "btn_xmlflash";
+            this.btn_xmlflash.Size = new System.Drawing.Size(56, 26);
+            this.btn_xmlflash.TabIndex = 9;
+            this.btn_xmlflash.Text = "Yükle";
+            this.btn_xmlflash.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // btn_xml
+            // 
+            this.btn_xml.BackColor = System.Drawing.Color.Transparent;
+            this.btn_xml.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btn_xml.Image = null;
+            this.btn_xml.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_xml.Location = new System.Drawing.Point(6, 130);
+            this.btn_xml.Name = "btn_xml";
+            this.btn_xml.Size = new System.Drawing.Size(96, 26);
+            this.btn_xml.TabIndex = 7;
+            this.btn_xml.Text = "XML Seç";
+            this.btn_xml.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // rbtn_dual
+            // 
+            this.rbtn_dual.BackColor = System.Drawing.Color.Transparent;
+            this.rbtn_dual.Checked = false;
+            this.rbtn_dual.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.rbtn_dual.Location = new System.Drawing.Point(163, 12);
+            this.rbtn_dual.Name = "rbtn_dual";
+            this.rbtn_dual.Size = new System.Drawing.Size(75, 15);
+            this.rbtn_dual.TabIndex = 6;
+            this.rbtn_dual.Text = "Çift Sim";
+            // 
+            // rbnt_single
+            // 
+            this.rbnt_single.BackColor = System.Drawing.Color.Transparent;
+            this.rbnt_single.Checked = true;
+            this.rbnt_single.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.rbnt_single.Location = new System.Drawing.Point(77, 12);
+            this.rbnt_single.Name = "rbnt_single";
+            this.rbnt_single.Size = new System.Drawing.Size(80, 15);
+            this.rbnt_single.TabIndex = 5;
+            this.rbnt_single.Text = "Tek Sim";
+            // 
+            // btn_flash
+            // 
+            this.btn_flash.BackColor = System.Drawing.Color.Transparent;
+            this.btn_flash.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btn_flash.Image = null;
+            this.btn_flash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_flash.Location = new System.Drawing.Point(257, 98);
+            this.btn_flash.Name = "btn_flash";
+            this.btn_flash.Size = new System.Drawing.Size(56, 26);
+            this.btn_flash.TabIndex = 4;
+            this.btn_flash.Text = "Yükle";
+            this.btn_flash.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // combo_rom
+            // 
+            this.combo_rom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.combo_rom.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combo_rom.DropDownHeight = 100;
+            this.combo_rom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_rom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.combo_rom.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.combo_rom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(142)))), ((int)(((byte)(142)))));
+            this.combo_rom.FormattingEnabled = true;
+            this.combo_rom.HoverSelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.combo_rom.IntegralHeight = false;
+            this.combo_rom.ItemHeight = 20;
+            this.combo_rom.Items.AddRange(new object[] {
+            "Android 8.1 Oreo Orijinal Rom",
+            "Android 8.1 Oreo Orijinal Rom (Root)",
+            "Android 9.0 Pie Orijinal Rom",
+            "Android 9.0 Pie Orijinal Rom (Root)",
+            "Genel Sistem Imaj Romları"});
+            this.combo_rom.Location = new System.Drawing.Point(6, 98);
+            this.combo_rom.Name = "combo_rom";
+            this.combo_rom.Size = new System.Drawing.Size(245, 26);
+            this.combo_rom.StartIndex = 0;
+            this.combo_rom.TabIndex = 3;
+            // 
+            // btn_oem
+            // 
+            this.btn_oem.BackColor = System.Drawing.Color.Transparent;
+            this.btn_oem.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btn_oem.Image = null;
+            this.btn_oem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_oem.Location = new System.Drawing.Point(257, 66);
+            this.btn_oem.Name = "btn_oem";
+            this.btn_oem.Size = new System.Drawing.Size(56, 26);
+            this.btn_oem.TabIndex = 2;
+            this.btn_oem.Text = "Ayarla";
+            this.btn_oem.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // combo_oem
+            // 
+            this.combo_oem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.combo_oem.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combo_oem.DropDownHeight = 100;
+            this.combo_oem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_oem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.combo_oem.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.combo_oem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(142)))), ((int)(((byte)(142)))));
+            this.combo_oem.FormattingEnabled = true;
+            this.combo_oem.HoverSelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.combo_oem.IntegralHeight = false;
+            this.combo_oem.ItemHeight = 20;
+            this.combo_oem.Items.AddRange(new object[] {
+            "ÖnYükleyici Kilidini Aç",
+            "ÖnYükleyici Kilidini Kapat"});
+            this.combo_oem.Location = new System.Drawing.Point(6, 66);
+            this.combo_oem.Name = "combo_oem";
+            this.combo_oem.Size = new System.Drawing.Size(245, 26);
+            this.combo_oem.StartIndex = 0;
+            this.combo_oem.TabIndex = 1;
+            // 
+            // btn_read
+            // 
+            this.btn_read.BackColor = System.Drawing.Color.Transparent;
+            this.btn_read.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btn_read.Image = null;
+            this.btn_read.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_read.Location = new System.Drawing.Point(5, 33);
+            this.btn_read.Name = "btn_read";
+            this.btn_read.Size = new System.Drawing.Size(311, 27);
+            this.btn_read.TabIndex = 0;
+            this.btn_read.Text = "Bilgileri Oku";
+            this.btn_read.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // tab2
             // 
@@ -125,7 +347,7 @@
             this.tab2.Padding = new System.Windows.Forms.Padding(3);
             this.tab2.Size = new System.Drawing.Size(323, 228);
             this.tab2.TabIndex = 1;
-            this.tab2.Text = "Root Tools";
+            this.tab2.Text = "Rootlu Araçlar";
             this.tab2.UseVisualStyleBackColor = true;
             // 
             // grp_detecter
@@ -139,17 +361,17 @@
             this.grp_detecter.Size = new System.Drawing.Size(528, 43);
             this.grp_detecter.TabIndex = 0;
             this.grp_detecter.TabStop = false;
-            this.grp_detecter.Text = "GM 9 PRO Device Detecter";
+            this.grp_detecter.Text = "GM 9 PRO Cihaz Algılayıcı";
             this.grp_detecter.TextColor = System.Drawing.Color.Brown;
             // 
             // detecterbanner
             // 
-            this.detecterbanner.BackgroundColor = System.Drawing.Color.Brown;
+            this.detecterbanner.BackgroundColor = System.Drawing.Color.Black;
             this.detecterbanner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.detecterbanner.ButtonImage = ((System.Drawing.Image)(resources.GetObject("detecterbanner.ButtonImage")));
             this.detecterbanner.ButtonSmoothing = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.detecterbanner.ButtonStyle = XanderUI.XUISuperButton.Style.Flat;
-            this.detecterbanner.ButtonText = "GM 9 PRO Not Detected";
+            this.detecterbanner.ButtonText = "GM 9 PRO Algılanmadı";
             this.detecterbanner.CornerRadius = 5;
             this.detecterbanner.Enabled = false;
             this.detecterbanner.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
@@ -170,229 +392,54 @@
             // 
             this.log.AutoWordSelection = false;
             this.log.BackColor = System.Drawing.Color.Transparent;
+            this.log.Enabled = false;
             this.log.Font = new System.Drawing.Font("Tahoma", 10F);
             this.log.ForeColor = System.Drawing.Color.DimGray;
             this.log.Location = new System.Drawing.Point(334, 28);
             this.log.Name = "log";
             this.log.ReadOnly = false;
-            this.log.Size = new System.Drawing.Size(178, 228);
+            this.log.Size = new System.Drawing.Size(178, 140);
             this.log.TabIndex = 0;
             this.log.WordWrap = true;
             // 
-            // iTalk_Button_11
+            // iTalk_GroupBox1
             // 
-            this.iTalk_Button_11.BackColor = System.Drawing.Color.Transparent;
-            this.iTalk_Button_11.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iTalk_Button_11.Image = null;
-            this.iTalk_Button_11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iTalk_Button_11.Location = new System.Drawing.Point(5, 33);
-            this.iTalk_Button_11.Name = "iTalk_Button_11";
-            this.iTalk_Button_11.Size = new System.Drawing.Size(311, 27);
-            this.iTalk_Button_11.TabIndex = 0;
-            this.iTalk_Button_11.Text = "Read Informations";
-            this.iTalk_Button_11.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.iTalk_GroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_GroupBox1.Controls.Add(this.progressBar1);
+            this.iTalk_GroupBox1.Controls.Add(this.label2);
+            this.iTalk_GroupBox1.Controls.Add(this.label1);
+            this.iTalk_GroupBox1.Location = new System.Drawing.Point(334, 174);
+            this.iTalk_GroupBox1.MinimumSize = new System.Drawing.Size(136, 50);
+            this.iTalk_GroupBox1.Name = "iTalk_GroupBox1";
+            this.iTalk_GroupBox1.Padding = new System.Windows.Forms.Padding(5, 28, 5, 5);
+            this.iTalk_GroupBox1.Size = new System.Drawing.Size(178, 82);
+            this.iTalk_GroupBox1.TabIndex = 2;
+            this.iTalk_GroupBox1.Text = "Yükleme";
             // 
-            // combo_oem
+            // progressBar1
             // 
-            this.combo_oem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.combo_oem.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.combo_oem.DropDownHeight = 100;
-            this.combo_oem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_oem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.combo_oem.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.combo_oem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(142)))), ((int)(((byte)(142)))));
-            this.combo_oem.FormattingEnabled = true;
-            this.combo_oem.HoverSelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.combo_oem.IntegralHeight = false;
-            this.combo_oem.ItemHeight = 20;
-            this.combo_oem.Items.AddRange(new object[] {
-            "Unlock Bootloader",
-            "Lock Bootloader"});
-            this.combo_oem.Location = new System.Drawing.Point(6, 66);
-            this.combo_oem.Name = "combo_oem";
-            this.combo_oem.Size = new System.Drawing.Size(245, 26);
-            this.combo_oem.StartIndex = 0;
-            this.combo_oem.TabIndex = 1;
+            this.progressBar1.Location = new System.Drawing.Point(8, 48);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(162, 26);
+            this.progressBar1.TabIndex = 18;
             // 
-            // btn_oem
+            // label2
             // 
-            this.btn_oem.BackColor = System.Drawing.Color.Transparent;
-            this.btn_oem.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btn_oem.Image = null;
-            this.btn_oem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_oem.Location = new System.Drawing.Point(257, 66);
-            this.btn_oem.Name = "btn_oem";
-            this.btn_oem.Size = new System.Drawing.Size(56, 26);
-            this.btn_oem.TabIndex = 2;
-            this.btn_oem.Text = "Set";
-            this.btn_oem.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(93, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 13);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "İndirilen : 0 MB";
             // 
-            // iTalk_Button_12
+            // label1
             // 
-            this.iTalk_Button_12.BackColor = System.Drawing.Color.Transparent;
-            this.iTalk_Button_12.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iTalk_Button_12.Image = null;
-            this.iTalk_Button_12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iTalk_Button_12.Location = new System.Drawing.Point(257, 98);
-            this.iTalk_Button_12.Name = "iTalk_Button_12";
-            this.iTalk_Button_12.Size = new System.Drawing.Size(56, 26);
-            this.iTalk_Button_12.TabIndex = 4;
-            this.iTalk_Button_12.Text = "Flash";
-            this.iTalk_Button_12.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // iTalk_ComboBox1
-            // 
-            this.iTalk_ComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.iTalk_ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.iTalk_ComboBox1.DropDownHeight = 100;
-            this.iTalk_ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.iTalk_ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iTalk_ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.iTalk_ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(142)))), ((int)(((byte)(142)))));
-            this.iTalk_ComboBox1.FormattingEnabled = true;
-            this.iTalk_ComboBox1.HoverSelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.iTalk_ComboBox1.IntegralHeight = false;
-            this.iTalk_ComboBox1.ItemHeight = 20;
-            this.iTalk_ComboBox1.Items.AddRange(new object[] {
-            "Android 8.1 Oreo Stock Rom",
-            "Android 8.1 Oreo Stock Rom (Root)",
-            "Android 9.0 Pie Stock Rom",
-            "Android 9.0 Pie Stock Rom (Root)",
-            "Generic System Image Roms"});
-            this.iTalk_ComboBox1.Location = new System.Drawing.Point(6, 98);
-            this.iTalk_ComboBox1.Name = "iTalk_ComboBox1";
-            this.iTalk_ComboBox1.Size = new System.Drawing.Size(245, 26);
-            this.iTalk_ComboBox1.StartIndex = 0;
-            this.iTalk_ComboBox1.TabIndex = 3;
-            // 
-            // iTalk_RadioButton1
-            // 
-            this.iTalk_RadioButton1.Checked = false;
-            this.iTalk_RadioButton1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.iTalk_RadioButton1.Location = new System.Drawing.Point(77, 12);
-            this.iTalk_RadioButton1.Name = "iTalk_RadioButton1";
-            this.iTalk_RadioButton1.Size = new System.Drawing.Size(80, 15);
-            this.iTalk_RadioButton1.TabIndex = 5;
-            this.iTalk_RadioButton1.Text = "Single Sim";
-            // 
-            // iTalk_RadioButton2
-            // 
-            this.iTalk_RadioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.iTalk_RadioButton2.Checked = false;
-            this.iTalk_RadioButton2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.iTalk_RadioButton2.Location = new System.Drawing.Point(163, 12);
-            this.iTalk_RadioButton2.Name = "iTalk_RadioButton2";
-            this.iTalk_RadioButton2.Size = new System.Drawing.Size(75, 15);
-            this.iTalk_RadioButton2.TabIndex = 6;
-            this.iTalk_RadioButton2.Text = "Dual Sim";
-            // 
-            // iTalk_Button_13
-            // 
-            this.iTalk_Button_13.BackColor = System.Drawing.Color.Transparent;
-            this.iTalk_Button_13.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iTalk_Button_13.Image = null;
-            this.iTalk_Button_13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iTalk_Button_13.Location = new System.Drawing.Point(6, 130);
-            this.iTalk_Button_13.Name = "iTalk_Button_13";
-            this.iTalk_Button_13.Size = new System.Drawing.Size(96, 26);
-            this.iTalk_Button_13.TabIndex = 7;
-            this.iTalk_Button_13.Text = "Select XML";
-            this.iTalk_Button_13.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // iTalk_Button_14
-            // 
-            this.iTalk_Button_14.BackColor = System.Drawing.Color.Transparent;
-            this.iTalk_Button_14.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iTalk_Button_14.Image = null;
-            this.iTalk_Button_14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iTalk_Button_14.Location = new System.Drawing.Point(257, 130);
-            this.iTalk_Button_14.Name = "iTalk_Button_14";
-            this.iTalk_Button_14.Size = new System.Drawing.Size(56, 26);
-            this.iTalk_Button_14.TabIndex = 9;
-            this.iTalk_Button_14.Text = "Flash";
-            this.iTalk_Button_14.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // progress_xml
-            // 
-            this.progress_xml.Location = new System.Drawing.Point(108, 130);
-            this.progress_xml.Name = "progress_xml";
-            this.progress_xml.Size = new System.Drawing.Size(143, 26);
-            this.progress_xml.TabIndex = 10;
-            // 
-            // iTalk_ComboBox2
-            // 
-            this.iTalk_ComboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.iTalk_ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.iTalk_ComboBox2.DropDownHeight = 100;
-            this.iTalk_ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.iTalk_ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iTalk_ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.iTalk_ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(142)))), ((int)(((byte)(142)))));
-            this.iTalk_ComboBox2.FormattingEnabled = true;
-            this.iTalk_ComboBox2.HoverSelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.iTalk_ComboBox2.IntegralHeight = false;
-            this.iTalk_ComboBox2.ItemHeight = 20;
-            this.iTalk_ComboBox2.Items.AddRange(new object[] {
-            "Dialer",
-            "VoLTE (Some Roms)",
-            "Dialer Sound",
-            "Always On Display",
-            "Internal Storage",
-            "Google Play Services"});
-            this.iTalk_ComboBox2.Location = new System.Drawing.Point(6, 162);
-            this.iTalk_ComboBox2.Name = "iTalk_ComboBox2";
-            this.iTalk_ComboBox2.Size = new System.Drawing.Size(245, 26);
-            this.iTalk_ComboBox2.StartIndex = 0;
-            this.iTalk_ComboBox2.TabIndex = 11;
-            // 
-            // iTalk_Button_15
-            // 
-            this.iTalk_Button_15.BackColor = System.Drawing.Color.Transparent;
-            this.iTalk_Button_15.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iTalk_Button_15.Image = null;
-            this.iTalk_Button_15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iTalk_Button_15.Location = new System.Drawing.Point(257, 162);
-            this.iTalk_Button_15.Name = "iTalk_Button_15";
-            this.iTalk_Button_15.Size = new System.Drawing.Size(56, 26);
-            this.iTalk_Button_15.TabIndex = 12;
-            this.iTalk_Button_15.Text = "Fix";
-            this.iTalk_Button_15.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // iTalk_Button_16
-            // 
-            this.iTalk_Button_16.BackColor = System.Drawing.Color.Transparent;
-            this.iTalk_Button_16.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iTalk_Button_16.Image = null;
-            this.iTalk_Button_16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iTalk_Button_16.Location = new System.Drawing.Point(257, 194);
-            this.iTalk_Button_16.Name = "iTalk_Button_16";
-            this.iTalk_Button_16.Size = new System.Drawing.Size(56, 26);
-            this.iTalk_Button_16.TabIndex = 14;
-            this.iTalk_Button_16.Text = "Ok";
-            this.iTalk_Button_16.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // iTalk_ComboBox3
-            // 
-            this.iTalk_ComboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.iTalk_ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.iTalk_ComboBox3.DropDownHeight = 100;
-            this.iTalk_ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.iTalk_ComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iTalk_ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.iTalk_ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(142)))), ((int)(((byte)(142)))));
-            this.iTalk_ComboBox3.FormattingEnabled = true;
-            this.iTalk_ComboBox3.HoverSelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.iTalk_ComboBox3.IntegralHeight = false;
-            this.iTalk_ComboBox3.ItemHeight = 20;
-            this.iTalk_ComboBox3.Items.AddRange(new object[] {
-            "Reboot Normal",
-            "Reboot Recovery",
-            "Reboot Bootloader"});
-            this.iTalk_ComboBox3.Location = new System.Drawing.Point(5, 194);
-            this.iTalk_ComboBox3.Name = "iTalk_ComboBox3";
-            this.iTalk_ComboBox3.Size = new System.Drawing.Size(245, 26);
-            this.iTalk_ComboBox3.StartIndex = 0;
-            this.iTalk_ComboBox3.TabIndex = 13;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Boyut :  0 MB";
             // 
             // Form1
             // 
@@ -412,6 +459,8 @@
             this.tab1.ResumeLayout(false);
             this.grp_detecter.ResumeLayout(false);
             this.grp_detecter.PerformLayout();
+            this.iTalk_GroupBox1.ResumeLayout(false);
+            this.iTalk_GroupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -424,21 +473,25 @@
         private System.Windows.Forms.TabControl tab;
         private System.Windows.Forms.TabPage tab1;
         private System.Windows.Forms.TabPage tab2;
-        private iTalk.iTalk_RichTextBox log;
-        private iTalk.iTalk_RadioButton iTalk_RadioButton2;
-        private iTalk.iTalk_RadioButton iTalk_RadioButton1;
-        private iTalk.iTalk_Button_1 iTalk_Button_12;
-        private iTalk.iTalk_ComboBox iTalk_ComboBox1;
+        private iTalk.iTalk_RadioButton rbtn_dual;
+        private iTalk.iTalk_RadioButton rbnt_single;
+        private iTalk.iTalk_Button_1 btn_flash;
+        private iTalk.iTalk_ComboBox combo_rom;
         private iTalk.iTalk_Button_1 btn_oem;
         private iTalk.iTalk_ComboBox combo_oem;
-        private iTalk.iTalk_Button_1 iTalk_Button_11;
-        private iTalk.iTalk_Button_1 iTalk_Button_16;
-        private iTalk.iTalk_ComboBox iTalk_ComboBox3;
-        private iTalk.iTalk_Button_1 iTalk_Button_15;
-        private iTalk.iTalk_ComboBox iTalk_ComboBox2;
+        private iTalk.iTalk_Button_1 btn_read;
+        private iTalk.iTalk_Button_1 btn_reboot;
+        private iTalk.iTalk_ComboBox combo_reboot;
+        private iTalk.iTalk_Button_1 btn_fix;
+        private iTalk.iTalk_ComboBox combo_fix;
         private System.Windows.Forms.ProgressBar progress_xml;
-        private iTalk.iTalk_Button_1 iTalk_Button_14;
-        private iTalk.iTalk_Button_1 iTalk_Button_13;
+        private iTalk.iTalk_Button_1 btn_xmlflash;
+        private iTalk.iTalk_Button_1 btn_xml;
+        private iTalk.iTalk_GroupBox iTalk_GroupBox1;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private iTalk.iTalk_RichTextBox log;
     }
 }
 

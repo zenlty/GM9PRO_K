@@ -48,7 +48,7 @@ namespace GM9PRO_Kit
             }
             else
             {
-                MessageBox.Show("GM 9 Pro not detected","Error Code : 001",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("GM 9 PRO Algılanmadı", "Hata Kodu : 001",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
         void detecter()
@@ -66,13 +66,16 @@ namespace GM9PRO_Kit
             detecterbanner.ButtonText = process.StandardOutput.ReadToEnd();
             if (detecterbanner.ButtonText == "" || detecterbanner.ButtonText == null)
             {
-                detecterbanner.ButtonText = "GM 9 PRO Not Detected";
+                detecterbanner.ButtonText = "GM 9 PRO Algılanmadı";
                 isthereconnecteddevice = false;
+                detecterbanner.BackgroundColor = Color.Black;
             }
             else
             {
                 isthereconnecteddevice = true;
-                detecterbanner.ButtonText = "General Mobile GM 9 PRO Detected !";
+                detecterbanner.ButtonText = "General Mobile GM 9 PRO Algılandı !";
+                detecterbanner.BackgroundColor = Color.DarkRed;
+
             }
         }
         protected override void WndProc(ref Message m)
